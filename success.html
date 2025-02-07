@@ -7,33 +7,52 @@
     <meta name="author" content="Emily Cristiny Dias">
     <meta name="keywords" content="HTML, CSS, Javascript">
     <link rel="icon" href="./assets/img/favicon.svg">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 
     <title>Siga-me @emilyestvz</title>
 </head>
 <body>
 
-    <header>
-        <div id="header_content">
+    <header class="flex menu-container">
+        <div id="header-content" class="menu-content">
+            
             <div id="titulo">
                 <a href="#">The Universe</a>
+              </div>
+      
+              <div id="menu" class="flex">
+                <nav>
+                  <ul class="flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contato</a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-        </div>
+          </header>
     </header>
 
     <main>
 
-        <section id="success">
-            <div id="success_texto">
+        <section id="success" class="flex home-container">
+            <div id="success-txt">
                 <h2>E-mail enviado com sucesso! ✨</h2>
                 <p>Obrigada por entrar em contato, logo mais entrarei em contato com você.</p>
 
-                <a href="index.html" id="voltar_home">Voltar para o início</a>
+                <a href="index.html" id="voltar-home">Voltar para o início</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <div id="footer_content">
+        <div id="footer-content">
             Feito com 💜 por Emily Cristiny Dias - 2025 ✨
         </div>
     </footer>

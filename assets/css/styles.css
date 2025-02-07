@@ -291,3 +291,7 @@ footer {
     border-bottom: 1px solid var(--purple-500);
     filter: opacity(0.9);
 }
+
+#sucess-txt, div{
+    text-align: center;
+}
