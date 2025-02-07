@@ -7,20 +7,27 @@
     <meta name="author" content="Emily Cristiny Dias">
     <meta name="keywords" content="HTML, CSS, Javascript">
     <link rel="icon" href="./assets/img/favicon.svg">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>Emilynda</title>
   </head>
 
   <body>
-    <header>
-      <div id="header_content">
+
+    <header class="flex menu-container">
+      <div id="header-content" class="menu-content">
+
         <div id="titulo">
-          <h1>The Universe - FullStack Developer</h1>
+          <a href="#">The Universe</a>
         </div>
 
-        <div id="menu">
+        <div id="menu" class="flex">
           <nav>
-            <ul>
+            <ul class="flex">
               <li><a href="#">Home</a></li>
               <li><a href="#">Sobre</a></li>
               <li><a href="#">Projetos</a></li>
@@ -32,9 +39,12 @@
     </header>
 
     <main>
-      <section id="home">
 
-        <article id="home-texto">
+      <!-- Home -->
+      <section id="home" class="flex home-container">
+
+        <article id="home-texto" class="flex home-content">
+
           <h4>Bem Vindo ao novo universo</h4>
           <h1>Mundos Diferentes para Pessoas Diferentes</h1>
           <p>
@@ -44,53 +54,69 @@
             sed vero in sapiente.
           </p>
 
-          <a href="#" target="_blank">Explorar</a>
+          <a class="botao" href="#" target="_blank">Explorar</a>
         </article>
 
-        <article id="home-imagem">
+        <article id="home-imagem" class="home-content">
           <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
         </article>
       </section>
 
-      <section id="about">
-        <img src="./assets/img/user_02.svg" alt="Foto de Perfil">
+      <!-- About -->
+      <section id="about" class="flex about-container">
+        <article id="home-img" class="about-content">
+          <img src="./assets/img/gen.jpg" alt="Foto de Perfil">
+        </article>
 
-        <article id="about">
-          <h1>Sobre Mim</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <article id="about-txt" class="flex home-content">
 
-          <div id="about_github">
-            <a href="https://github.com/emilyestvz" target="_blank">
-              Github
+          <h1>SOBRE MIM</h1>
+          <p>Atualmente em transição de carreira, venho de uma experiência enriquecedora na Espanha de 2022 a 2023, onde estudei e alcancei fluência em espanhol, além de aprimorar meu inglês e adquirir uma bagagem cultural valiosa.
+          <br>Anteriormente, trabalhei com atendimento ao cliente e vendas em vários âmbitos, onde tive a oportunidade de aprimorar minha adaptabilidade, comunicação, trabalho em equipe e metodologias ágeis.</p>
+
+          <div id="about-github">
+            <a class="botao" href="https://github.com/emilyestvz" target="_blank">
+              GitHub
             </a>
-            <p>200 Seguidores</p>
-            <p>20 Repositórios</p>
+          </div>
+
+          <div>
+            <p>
+              <img src="./assets/icons/user.svg" alt="Ícone user">520 Seguidores
+              <br>
+            <img src="./assets/icons/folder.svg" alt="Ícone folder">37 Repositórios
+          </p>
           </div>
         </article>
+
       </section>
 
-      <section id="contact">
-        <h4>Contate-me</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
-          laboriosam ipsam molestias at officiis sequi quae delectus dignissimos
-          pariatur voluptate necessitatibus quaerat iste reprehenderit, itaque
-          odit modi ipsa! Porro, hic?
-        </p>
+      <!-- Contato -->
+      <section id="contact" class="flex contact-content">
 
-        <div id="icones_redes_sociais">
-          <a href="https://www.linkedin.com/in/emilycristinydias/" target="_blank">
-            <img src="./assets/img/linkedin.svg" alt="Logo do Linkedin" />
-          </a>
-          <a href="https://github.com/emilyestvz" target="_blank">
-            <img src="./assets/img/github.svg" alt="Logo do Github" />
-          </a>
-          <a href="#" target="_blank">
-            <img src="./assets/img/instagram.svg" alt="Logo do Instagram" />
-          </a>
-        </div>
+        <article>
+          <h4>Contate-me</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
+            laboriosam ipsam molestias at officiis sequi quae delectus dignissimos
+            pariatur voluptate necessitatibus quaerat iste reprehenderit, itaque
+            odit modi ipsa! Porro, hic?
+          </p>
 
-        <form action="sucess.html" method="post">
+          <div id="icons">
+            <a href="https://www.linkedin.com/in/emilycristinydias/" target="_blank">
+              <img src="./assets/img/linkedin.svg" alt="Logo do Linkedin" />
+            </a>
+            <a href="https://github.com/emilyestvz" target="_blank">
+              <img src="./assets/img/github.svg" alt="Logo do Github" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="./assets/img/instagram.svg" alt="Logo do Instagram" />
+            </a>
+          </div>
+        </article>
+
+        <form action="sucess.html" method="POST">
           <label for="nome">Nome</label>
           <input
             id="nome"
