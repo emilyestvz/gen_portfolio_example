@@ -218,6 +218,7 @@ button, a{
     align-items: center;
 }
 
+/*Menu*/
 .menu-container {
     height: 80px;
     width: 100%;
@@ -256,6 +257,7 @@ button, a{
 
 }
 
+/*Home*/
 .home-container{
     max-width: 1120px;
     margin: 16px auto;
@@ -292,6 +294,12 @@ button, a{
     }
 }
 
+#home-img{
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+/*About*/
 .about-container{
     max-width: 1120px;
     margin: 16px auto;
@@ -349,6 +357,7 @@ button, a{
     }
 }
 
+/*Contact*/
 .contact-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -395,6 +404,7 @@ button, a{
     }
 }
 
+/*Forms*/
 form {
     background-color: #171717;
     padding: 20px;
@@ -432,6 +442,7 @@ form {
     }
 }
 
+/*Footer*/
 footer {
     background-color: #171717;
     padding: 20px;
