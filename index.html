@@ -24,7 +24,7 @@
         <div id="menu" class="flex">
           <nav>
             <ul class="flex">
-              <li><a href="#">HOME</a></li>
+              <li><a href="index.html">HOME</a></li>
               <li><a href="#">SOBRE</a></li>
               <li><a href="#">PROJETOS</a></li>
               <li><a href="#">CONTATO</a></li>
@@ -58,30 +58,7 @@
 
       <!-- About -->
       <section id="about" class="flex about-container">
-        <article id="about-img" class="about-content">
-          <img src="./assets/img/gen.jpg" alt="Foto de Perfil">
-        </article>
-
-        <article id="about-txt" class="flex home-content">
-
-          <h1>SOBRE MIM</h1>
-          <p>Atualmente em transição de carreira, venho de uma experiência enriquecedora na Espanha de 2022 a 2023, onde estudei e alcancei fluência em espanhol, além de aprimorar meu inglês e adquirir uma bagagem cultural valiosa.
-          <br>Anteriormente, trabalhei com atendimento ao cliente e vendas em vários âmbitos, onde tive a oportunidade de aprimorar minha adaptabilidade, comunicação, trabalho em equipe e metodologias ágeis.</p>
-
-          <div id="about-github">
-            <a class="botao" href="https://github.com/emilyestvz" target="_blank">
-              GitHub
-            </a>
-          </div>
-
-          <div>
-            <p>
-              <img src="./assets/icons/user.svg" alt="Ícone user">520 Seguidores
-              <br>
-            <img src="./assets/icons/folder.svg" alt="Ícone folder">37 Repositórios
-          </p>
-          </div>
-        </article>
+        
 
       </section>
 
@@ -110,7 +87,12 @@
           </div>
         </article>
 
-        <form action="sucess.html" method="POST">
+        <!-- Formulário -->
+        <form id="formulario" action="https://formsubmit.co/b3abef7587e60b1b93239badb4032396" method="POST">
+
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+          <input type="hidden" name="_captcha" value="false">
+
           <label for="nome">Nome</label>
           <input
             id="nome"
@@ -151,5 +133,7 @@
             Feito com 💜 por Emily Cristiny Dias - 2025 ✨
         </div>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
