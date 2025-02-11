@@ -447,4 +447,9 @@ footer {
 
 #sucess-txt, div{
     text-align: center;
+
+    & p{
+        margin-bottom: 1rem;
+    }
 }
+
