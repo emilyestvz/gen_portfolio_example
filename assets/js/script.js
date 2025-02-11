@@ -6,6 +6,8 @@ async function getApiGithub() {
 
     try {
         const response = await fetch(`https://api.github.com/users/emilyestvz`);
+
+        // Converte os dados em json
         const perfil = await response.json();
         
         about.innerHTML = `
@@ -58,8 +60,9 @@ formulario.addEventListener('submit', (event) => {
     const campoNome = document.querySelector('#nome');
     const txtNome = document.querySelector('#txtNome');
 
-    if(campoNome.value.length < 3) {
+    if(campoNome.value.trim().length < 3) {
         txtNome.innerHTML = `O nome deve ter no mínimo 3 caracteres.`
+        txtNome.style.color = 'red'
         campoNome.focus()
         formValido = false;
     }else{ 
@@ -70,8 +73,9 @@ formulario.addEventListener('submit', (event) => {
     const campoEmail = document.querySelector('#email');
     const txtEmail = document.querySelector('#txtEmail');
 
-    if(!emailRegex.value.match(campoEmail)) {
+    if(!campoEmail.value.trim().match(emailRegex)) {
         txtEmail.innerHTML = `O email digitado é inválido.`
+        txtEmail.style.color ='red'
         campoEmail.focus()
         formValido = false;
     } else{
@@ -82,8 +86,9 @@ formulario.addEventListener('submit', (event) => {
     const campoAssunto = document.querySelector('#assunto');
     const txtAssunto = document.querySelector('#txtAssunto');
 
-    if(campoAssunto.value.length < 5) {
+    if(campoAssunto.value.trim().length < 5) {
         txtAssunto.innerHTML = `O assunto deve conter no mínimo 5 caracteres.`
+        txtAssunto.style.color ='red'
         campoAssunto.focus()
         formValido = false;
     }else{ 
