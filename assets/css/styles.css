@@ -178,7 +178,7 @@ button, a{
     height: 80px;
     position: fixed;
     top: 0;
-    background-color: #171717;
+    background:rgba(0, 0, 0, 1);
     filter: opacity(0.9);
 
     & a {
@@ -210,7 +210,9 @@ button, a{
 
 /*Home*/
 #home {
-    background-image: url(https://ik.imagekit.io/emy/Backgrounds/ff.jpg?updatedAt=1739659919461);
+    background: 
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)),
+    url(https://ik.imagekit.io/emy/Backgrounds/bg2.avif?updatedAt=1739659702448);
     color: whitesmoke;
     background-attachment: fixed;
     background-size: cover;
@@ -353,7 +355,9 @@ button, a{
 }
 
 #contact{
-    background-image: url(/assets/img/ff.jpg);
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
+    url(https://ik.imagekit.io/emy/Backgrounds/bg2.avif?updatedAt=1739659702448);
     background-attachment: fixed;
     background-size: cover;
     color: var(--white);
@@ -365,6 +369,7 @@ button, a{
         border-radius: 20px;
         cursor: pointer;
     }
+
 }
 
 /*Forms*/
@@ -407,7 +412,7 @@ form {
 
 /*Footer*/
 footer {
-    background-color: #171717;
+    background-color: rgba(0, 0, 0, 1);
     padding: 20px;
     text-align: center;
     color: var(--white);
