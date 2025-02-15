@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +21,9 @@
           <a href="#">Hello World!</a>
         </div>
 
-        <div id="menu" class="flex">
+        <div id="menu" class="flex bg-white dark:bg-black">
           <nav>
-            <ul class="flex">
+            <ul class="flex dark:text-gray-400">
               <li><a href="index.html">HOME</a></li>
               <li><a href="#">SOBRE</a></li>
               <li><a href="#">PROJETOS</a></li>
@@ -39,9 +39,9 @@
       <!-- Home -->
       <section id="home" class="flex home-container">
 
-        <article id="home-texto" class="flex home-content">
+        <article class="flex home-content">
 
-          <h4>Bem-vindo(a) ao meu Universo</h4>
+          <h4>Bem-vindo(a) ao meu Universo ✨</h4>
           <h1>Emily Dias</h1>
           <p>
             Desenvolvedora FullStack com foco em Desenvolvimento Web com domínio em Python,
@@ -50,23 +50,18 @@
 
           <a class="botao" href="#" target="_blank">Explorar</a>
         </article>
-
-        <article id="home-img" class="home-content">
-          <img src="./assets/gifs/yE.gif" alt="Esqueleto dançando">
-        </article>
       </section>
 
       <!-- About -->
       <section id="about" class="flex about-container">
-        
 
       </section>
 
       <!-- Contato -->
-      <section id="contact" class="flex contact-content">
+      <section id="contact" class="flex contact-container">
 
-        <article>
-          <h4>Contate-me</h4>
+        <article class="contact-content">
+          <h4>Entre em contato comigo!</h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
             laboriosam ipsam molestias at officiis sequi quae delectus dignissimos
@@ -88,7 +83,8 @@
         </article>
 
         <!-- Formulário -->
-        <form id="formulario" action="https://formsubmit.co/b3abef7587e60b1b93239badb403239" method="POST">
+        <form id="formulario" 
+        action="https://formsubmit.co/b3abef7587e60b1b93239badb403239" method="POST">
 
           <input type="hidden" name="_next" value="https://emilyestvz.github.io/gen_portfolio_example/success.html">
           <input type="hidden" name="_captcha" value="false">
